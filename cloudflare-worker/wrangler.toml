@@ -1,0 +1,12 @@
+# Конфигурация Cloudflare Worker для приёма заявок с формы записи.
+# Деплой:  cd cloudflare-worker  &&  npx wrangler deploy
+name = "stom-lead"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+# Публичные переменные можно задать здесь (видны в дашборде).
+# Секреты (GREENAPI_TOKEN) сюда НЕ пишем — только через `wrangler secret put`.
+[vars]
+# LEAD_CHAT_ID = "996555003200@c.us"
+# GREENAPI_ID_INSTANCE = "1101000001"
+# ALLOWED_ORIGIN = "https://USERNAME.github.io"
